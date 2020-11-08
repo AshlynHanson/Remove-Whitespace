@@ -33,6 +33,7 @@ then
     # each line and writes it to the file
     echo ${line%%+([[:space:]])} >> $file
   done < "$originalFile"
+  exit 0
 else
   echo "File $1 does not exist"
   exit 1
